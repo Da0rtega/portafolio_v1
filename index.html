@@ -5,11 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portafolio_v1</title>
     <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+    <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
       rel="stylesheet"
       integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
       crossorigin="anonymous"
     />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
     <link rel="stylesheet" href="Assets/CSS/style.css" />
     <script
       src="https://code.jquery.com/jquery-3.7.1.min.js"
@@ -21,7 +26,7 @@
     <!--Barra de navegacion-->
     <nav class="navbar navbar-expand-lg bg-body-tertiary custom-navbar">
       <div class="container-fluid">
-        <a class="navbar-brand" href="#">Hola mundo.</a>
+        <a class="navbar-brand" href="#">Daniela.</a>
         <button
           class="navbar-toggler"
           type="button"
@@ -38,15 +43,17 @@
           id="navbarNavAltMarkup"
         >
           <div class="navbar-nav">
-            <a class="nav-link active" aria-current="page" href="#">Sobre mi</a>
-            <a class="nav-link active" aria-current="page" href="#"
+            <a class="nav-link active" aria-current="page" href="#sobreMi"
+              >Sobre mi</a
+            >
+            <a class="nav-link active" aria-current="page" href="#proyectos"
               >Proyectos</a
             >
-            <a class="nav-link active" aria-current="page" href="#"
+            <a class="nav-link active" aria-current="page" href="#habilidades"
               >Habilidades</a
             >
-            <a class="nav-link active" aria-current="page" href="#"
-              >Contactame</a
+            <a class="nav-link active" aria-current="page" href="#contactame"
+              >Contáctame</a
             >
           </div>
         </div>
@@ -55,95 +62,158 @@
 
     <!--Main-->
     <div class="p-5 bg-primary text-white text-center extended-section">
-      <h1>Hola &#128075;,</h1>
-      <h2>Mi nombre es Daniela y estoy aprendiendo desarrollo web.</h2>
+      <h1 class="typing-container">Hola&#128075;,</h1>
+      <h2 class="presentacion">
+        Mi nombre es Daniela y estoy aprendiendo desarrollo web.
+      </h2>
+      <div class="social-icons">
+        <i class="fab fa-html5 icon"></i>
+        <i class="fa-brands fa-css3-alt icon"></i>
+        <i class="fa-brands fa-js icon"></i>
+        <i class="fa-brands fa-github icon"></i>
+        <i class="fa-brands fa-git icon"></i>
+        <i class="fa-brands fa-python icon"></i>
+        <i class="fa-solid fa-database icon"></i>
+        <i class="fa-solid fa-cloud icon"></i>
+      </div>
     </div>
 
-    <div class="container mt-5">
-      <div class="row">
-        <div class="col-sm-4">
-          <h1>Sobre mi</h1>
-          <a class="nav-link" href="#">Linkedin</a>
-        </div>
-        <div class="col-sm-8">
-          <h1>Proyectos</h1>
-          <h5>Github</h5>
-          <p>
-            Sunt in culpa qui officia deserunt mollit anim id est laborum
-            consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-            labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-            exercitation ullamco.
-          </p>
+    <div id="sobreMi" class="container mt-5">
+      <h1><br />Sobre mi</h1>
+      <h2>
+        <a
+          href="https://www.linkedin.com/in/daniela-g-2b0244285/"
+          target="_blank"
+          class="text-decoration-none"
+          >LinkedIn</a
+        >
+      </h2>
+      <p>
+        <br />Comprometida estudiante de desarrollo web con un entusiasmo innato
+        por aprender y explorar el fascinante mundo de la informática.
+        Actualmente, estoy inmersa en el aprendizaje de tecnologías web, donde
+        disfruto de cada desafío y descubrimiento.
+      </p>
+    </div>
+    <div id="proyectos" class="container mt-5">
+      <h1><br />Proyectos</h1>
+      <h2>
+        <a
+          href="https://github.com/Da0rtega"
+          target="_blank"
+          class="text-decoration-none"
+          >Github</a
+        >
+      </h2>
+      <p>
+        <br />Estoy emocionada de compartir mis primeros pasos en el mundo del
+        desarrollo web con este portafolio, que representa el primer sitio que
+        he creado para mostrar mi trabajo y mis habilidades. Este proyecto es un
+        hito importante para mí, ya que estoy en las primeras etapas de mi
+        carrera como desarrolladora web.
+      </p>
+    </div>
 
-          <h1 class="mt-5">Habilidades</h1>
-          <h5>Title description, Sep 2, 2020</h5>
-          <p>
-            Sunt in culpa qui officia deserunt mollit anim id est laborum
-            consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-            labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-            exercitation ullamco.
-          </p>
-        </div>
-      </div>
+    <div id="habilidades" class="container mt-5">
+      <h1><br />Habilidades</h1>
+      <p>
+        <br />Hablo inglés con fluidez y tengo conocimientos en ciberseguridad,
+        lo que me permite abordar diversos desafíos técnicos y seguir
+        aprendiendo en el campo de la informática.
+      </p>
     </div>
 
     <!--Formulario-->
     <div class="container mt-5">
       <div class="row justify-content-center">
         <div class="col-sm-12 col-md-10 col-lg-5">
-          <div class="mb-4">
-            <h1>Formulario de contacto</h1>
-            <label for="exampleFormControlInput1" class="form-label"
-              ><br>Email</label
-            >
-            <input
-              type="email"
-              class="form-control"
-              id="exampleFormControlInput1"
-              placeholder="name@example.com"
-            />
-          </div>
-          <div class="row">
-            <div class="col">
+          <form id="contactForm">
+            <div id="contactame" class="mb-4">
+              <h1><br /><br />Formulario de contacto</h1>
+              <label for="email" class="form-label"><br />Email</label>
               <input
-                type="text"
+                type="email"
                 class="form-control"
-                placeholder="First name"
-                aria-label="First name"
+                id="email"
+                name="email"
+                placeholder="name@example.com"
+                required
               />
-            </div>
-            <div class="col">
-              <input
-                type="text"
-                class="form-control"
-                placeholder="Last name"
-                aria-label="Last name"
-              />
-            </div>
-          </div>
-          <div class="mb-3">
-            <label for="exampleFormControlTextarea1" class="form-label"
-              ><br>¿En que puedo ayudarle?</label
-            >
-            <textarea
-              class="form-control"
-              id="exampleFormControlTextarea1"
-              rows="3"
-            ></textarea><br>
-            <div class="col-12">
-                <button class="btn btn-primary" type="submit">Submit form</button>
+              <div class="invalid-feedback">
+                Por favor, ingresa un email válido.
               </div>
-          </div>
+            </div>
+            <div class="row">
+              <div class="col">
+                <input
+                  type="text"
+                  class="form-control"
+                  placeholder="First name"
+                  aria-label="First name"
+                  name="firstName"
+                  required
+                  minlength="2"
+                />
+                <div class="invalid-feedback">
+                  El nombre debe tener al menos 3 carácteres.
+                </div>
+              </div>
+              <div class="col">
+                <input
+                  type="text"
+                  class="form-control"
+                  placeholder="Last name"
+                  aria-label="Last name"
+                  name="lastName"
+                  required
+                  minlength="2"
+                />
+                <div class="invalid-feedback">
+                  El apellido debe tener al menos 2 carácteres.
+                </div>
+              </div>
+            </div>
+            <div class="mb-3">
+              <label for="message" class="form-label"
+                ><br />¿En qué puedo ayudarle?</label
+              >
+              <textarea
+                class="form-control"
+                id="message"
+                name="message"
+                rows="3"
+                required
+                minlength="10"
+              ></textarea
+              ><br />
+              <div class="invalid-feedback">
+                El mensaje debe tener al menos 10 carácteres.
+              </div>
+              <div class="col-12">
+                <button class="btn btn-primary" type="submit">
+                  Submit form
+                </button>
+              </div>
+            </div>
+          </form>
         </div>
       </div>
     </div>
 
     <!--Footer-->
-    <div class="mt-5 p-4 bg-dark text-white text-center">
+    <div
+      class="footer mt-5 p-4 bg-dark text-white text-center position-relative"
+    >
       <p>
         Desarrollo de primer proyecto para portafolio "FullStack JavaScript",
-        <br /><br />¿Te ha gustado? <button type="button" class="btn btn-primary">0 Like(s)</button>
+        <br /><br />¿Te ha gustado?
+        <button id="botonLike" type="button" class="btn btn-primary">
+          0 Like(s)
+        </button>
       </p>
+      <div class="version-text">
+        <p class="mb-0">Version 1.0</p>
+      </div>
     </div>
 
     <script src="Assets/JS/logic.js"></script>
